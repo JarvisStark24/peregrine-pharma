@@ -23,9 +23,12 @@ const WelcomeSection = () => {
         
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {/* Team Section */}
-          <div className="p-4 md:w-1/3 flex flex-col text-center items-center group transform transition-all duration-300 hover:scale-105">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full text-customBlue mb-5 flex-shrink-0">
-              <RiTeamFill className="text-6xl group-hover:animate-blink transition-opacity duration-200" />
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center 
+          group transform transition-all duration-300 hover:scale-105">
+            <div className="w-20 h-20 inline-flex items-center justify-center 
+            rounded-full text-customBlue mb-5 flex-shrink-0">
+              <RiTeamFill className="text-6xl group-hover:animate-blink 
+              transition-opacity duration-200" />
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -37,7 +40,7 @@ const WelcomeSection = () => {
                 banh mi pug VHS try-hard.
               </p>
               <Link to="/about-us">
-                <button className="mt-3 text-customRed bg-white border-2 
+                <button className="mt-3 text-customRed border-red-300 bg-white border-2 
                 py-2 px-6 rounded-md hover:bg-customRed hover:text-white">
                   Our Team
                 </button>
@@ -48,8 +51,10 @@ const WelcomeSection = () => {
           {/* Products Section */}
           <div className="p-4 md:w-1/3 flex flex-col text-center items-center 
           group transform transition-all duration-300 hover:scale-105">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full text-customBlue mb-5 flex-shrink-0">
-              <FaHandHoldingMedical className="text-6xl group-hover:animate-blink transition-opacity duration-200" />
+            <div className="w-20 h-20 inline-flex items-center justify-center 
+            rounded-full text-customBlue mb-5 flex-shrink-0">
+              <FaHandHoldingMedical className="text-6xl group-hover:animate-blink 
+              transition-opacity duration-200" />
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -61,7 +66,7 @@ const WelcomeSection = () => {
                 banh mi pug VHS try-hard.
               </p>
               <Link to="/products">
-                <button className="mt-3 text-white bg-customRed border-2 py-2 
+                <button className="mt-3 text-white border-red-300 bg-customRed border-2 py-2 
                 px-6 rounded-md hover:bg-white hover:text-customRed">
                   Discover Now
                 </button>
@@ -70,9 +75,12 @@ const WelcomeSection = () => {
           </div>
 
           {/* Vision Section */}
-          <div className="p-4 md:w-1/3 flex flex-col text-center items-center group transform transition-all duration-300 hover:scale-105">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full text-customBlue mb-5 flex-shrink-0">
-              <FcIdea className="text-6xl group-hover:animate-blink transition-opacity duration-200" />
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center 
+          group transform transition-all duration-300 hover:scale-105">
+            <div className="w-20 h-20 inline-flex items-center justify-center 
+            rounded-full text-customBlue mb-5 flex-shrink-0">
+              <FcIdea className="text-6xl group-hover:animate-blink 
+              transition-opacity duration-200" />
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -84,7 +92,8 @@ const WelcomeSection = () => {
                 banh mi pug VHS try-hard.
               </p>
               <Link to="/about-us">
-                <button className="mt-3 text-customRed bg-white border-2 py-2 
+                <button className="mt-3 text-customRed bg-white border-2
+                 border-red-300 py-2 
                 px-6 rounded-md hover:bg-customRed hover:text-white">
                   Check It
                 </button>

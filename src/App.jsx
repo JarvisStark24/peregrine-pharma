@@ -5,10 +5,15 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
+import Partners from "./components/Partners";
+import SmoothScroll from "./utils/SmoothScroll";
+import BackToTop from "./utils/BackToTop";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
     <>
+      <SmoothScroll />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
@@ -19,7 +24,10 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>
+        <Partners />
         <Footer />
+        <BackToTop />
+        <WhatsAppButton />
       </div>
     </>
   );

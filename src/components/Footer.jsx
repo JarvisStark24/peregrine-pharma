@@ -8,6 +8,11 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-center">
         {/* About Section */}
         <div className="footer-section about mb-6 md:mb-0 pr-4 max-w-md">
+          <img
+            src="/assets/logo.png"
+            alt="Pharma Logo"
+            className="w-12 h-12 md:w-14 md:h-14 rounded-full"
+          />
           <h2 className="logo text-lg font-semibold">
             <div>
               <span>Peregrine Falcon</span>
@@ -15,7 +20,8 @@ const Footer = () => {
             </div>
           </h2>
           <p className="mt-2 text-sm pr-2 mr-8 text-gray-300">
-            Peregrine Falcon Pharmaceuticals Private Limited is an active and leading Pharmaceuticals marketing company in West Bengal.
+            Peregrine Falcon Pharmaceuticals Private Limited is
+             an active and leading Pharmaceuticals marketing company in West Bengal.
           </p>
           <div className="social-icons flex mt-2">
             <a
@@ -23,7 +29,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-white hover:text-green-500 transition duration-300 mr-2"
+              className="text-white hover:text-customRed transition duration-300 mr-2"
             >
               <FaFacebookF />
             </a>
@@ -32,7 +38,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-white hover:text-green-500 transition duration-300"
+              className="text-white hover:text-customRed transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -45,16 +51,35 @@ const Footer = () => {
           <p className="mt-4 flex items-center text-sm text-gray-300">
             <FiMapPin className="mr-2" />
             <span>
-              Corporate office: 12 M C Garden Road, Camellia Metro Garden, LP 31/3/3
-              <br />
-              Kolkata, West Bengal. PIN: 700030
+              Corporate office: 
+              <a
+                href="https://www.google.com/maps?q=12+M+C+Garden+Road,
+                +Camellia+Metro+Garden,+LP+31/3/3,+Kolkata,+West+Bengal,+PIN:700030"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-customBlue"
+              >
+                12 M C Garden Road, Camellia Metro Garden, LP 31/3/3, Kolkata, West Bengal. PIN: 700030
+              </a>
             </span>
           </p>
           <p className="mt-2 flex items-center text-sm text-gray-300">
-            <FiPhone className="mr-2" /> +91-6297761130
+            <FiPhone className="mr-2" />
+            <a
+              href="tel:+916297761130"
+              className="text-customBlue"
+            >
+              +91-6297761130
+            </a>
           </p>
           <p className="mt-2 flex items-center text-sm text-gray-300">
-            <FiMail className="mr-2" /> info@peregrinefalcon.in
+            <FiMail className="mr-2" />
+            <a
+              href="mailto:info@peregrinefalcon.in"
+              className="text-customBlue"
+            >
+              info@peregrinefalcon.in
+            </a>
           </p>
         </div>
       </div>
