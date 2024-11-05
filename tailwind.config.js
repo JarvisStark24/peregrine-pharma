@@ -17,6 +17,12 @@ module.exports = {
           '50%': { opacity: '0' },
         },
       },
+      fontFamily: {
+        "red-hat": ['"Red Hat Display"', "sans-serif"],
+      },
+      fontWeight: {
+        200: "200",
+      },
     },
   },
   plugins: [],

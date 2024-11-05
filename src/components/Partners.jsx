@@ -9,7 +9,7 @@ const Partners = () => {
      to-customRed py-8"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-center font-red-hat text-3xl font-extrabold text-gray-800 mb-4">
           Our Partners
         </h2>
         <Carousel
@@ -17,6 +17,7 @@ const Partners = () => {
           infiniteLoop
           showArrows={false}
           showIndicators={false}
+          showThumbs={false}
           showStatus={false}
           interval={2000}
           className="relative"

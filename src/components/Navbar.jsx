@@ -43,7 +43,7 @@ const Navbar = () => {
         }`}
       >
         {/* Top Bar */}
-        <div className="bg-customRed text-white text-sm p-2 flex justify-between items-center">
+        <div className="bg-customRed font-red-hat text-white text-sm p-2 flex justify-between items-center">
           <div className="flex items-center space-x-4 pl-4 md:pl-24">
             <FaClock />
             <span>Opening Hours: Mon - Sat 8.00 - 18.00</span>
@@ -69,11 +69,11 @@ const Navbar = () => {
               </Link>
               <div>
                 <Link to="/">
-                  <h1 className="text-lg md:text-2xl font-bold">
+                  <h1 className="text-lg font-red-hat md:text-2xl font-extrabold">
                     Peregrine Falcon
                   </h1>
                 </Link>
-                <p className="text-xs text-gray-500">Pharmaceuticals PVT LTD</p>
+                <p className="text-sm font-red-hat font-medium text-gray-500">Pharmaceuticals PVT LTD</p>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
               )}
             </button>
 
-            <ul className="hidden md:flex items-center space-x-6 text-base font-semibold">
+            <ul className="hidden md:flex items-center font-red-hat space-x-6 text-base font-semibold">
               <li>
                 <Link
                   to="/"
@@ -144,7 +144,7 @@ const Navbar = () => {
           {/* Dropdown Menu for Mobile */}
           {isOpen && (
             <div
-              className="md:hidden absolute right-2 mt-0 bg-customRed
+              className="md:hidden absolute right-2 mt-0 bg-customRed font-red-hat
              text-white shadow-lg rounded-lg p-4"
             >
               <ul className="space-y-2 text-base font-semibold">

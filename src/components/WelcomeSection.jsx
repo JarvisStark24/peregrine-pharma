@@ -8,7 +8,7 @@ const WelcomeSection = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+          <h1 className="sm:text-3xl text-2xl font-red-hat font-bold title-font text-gray-900 mb-4">
             Welcome to Our Site!
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
@@ -31,7 +31,7 @@ const WelcomeSection = () => {
               transition-opacity duration-200" />
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 className="text-gray-900 font-red-hat text-lg title-font font-bold mb-3">
                 Peregrine Team
               </h2>
               <p className="leading-relaxed text-base">
@@ -57,7 +57,7 @@ const WelcomeSection = () => {
               transition-opacity duration-200" />
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 className="text-gray-900 font-red-hat text-lg title-font font-bold mb-3">
                 Products
               </h2>
               <p className="leading-relaxed text-base">
@@ -83,7 +83,7 @@ const WelcomeSection = () => {
               transition-opacity duration-200" />
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 className="text-gray-900 font-red-hat text-lg title-font font-bold mb-3">
                 Our Vision
               </h2>
               <p className="leading-relaxed text-base">

@@ -13,7 +13,7 @@ const Footer = () => {
             alt="Pharma Logo"
             className="w-12 h-12 md:w-14 md:h-14 rounded-full"
           />
-          <h2 className="logo text-lg font-semibold">
+          <h2 className="logo text-lg font-red-hat font-semibold">
             <div>
               <span>Peregrine Falcon</span>
               <div className="text-xs">Pharmaceuticals PVT LTD</div>
@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Contact Us Section */}
         <div className="footer-section contact pr-4 ml-8 max-w-md">
-          <h3 className="text-lg font-semibold">Contact Us</h3>
+          <h3 className="text-lg font-semibold font-red-hat">Contact Us</h3>
           <p className="mt-4 flex items-center text-sm text-gray-300">
             <FiMapPin className="mr-2" />
             <span>
@@ -86,7 +86,9 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom p-2 bg-gray-900 text-center mt-4 text-xs">
-        <p className="text-gray-300">&copy; 2024 Peregrine Falcon Pharmaceuticals. All Rights Reserved.</p>
+        <p className="text-gray-300 font-semibold font-red-hat">&copy; 2024 Peregrine 
+          Falcon Pharmaceuticals. 
+          All Rights Reserved.</p>
       </div>
     </footer>
   );

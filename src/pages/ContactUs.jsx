@@ -19,7 +19,7 @@ const ContactUs = () => {
           
           {/* Contact Information */}
           <div className="text-left mt-20">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-gray-800 font-red-hat mb-2">Get in Touch</h2>
             <p className="text-gray-700 mb-4">
               Reach out to us with any inquiries or for more information about our products. Our team is here to help!
             </p>
