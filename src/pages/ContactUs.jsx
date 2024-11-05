@@ -5,7 +5,7 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 const ContactUs = () => {
   return (
     <div className="text-black py-20">
-      <div className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-10">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-0">
         
         {/* Image Section */}
         <img 

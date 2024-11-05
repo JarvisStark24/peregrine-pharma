@@ -50,8 +50,24 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-2 pr-4 md:pr-24">
             <span>Follow Us:</span>
-            <FaFacebookF />
-            <FaInstagram />
+            <a
+              href="https://www.facebook.com/PeregrineFalconPharmaceuticalsPrivateLimited"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-white hover:text-customBlue transition duration-300 mr-2"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com/" // Update Instagram link
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-white hover:text-customBlue transition duration-300"
+            >
+              <FaInstagram />
+            </a>
           </div>
         </div>
 
