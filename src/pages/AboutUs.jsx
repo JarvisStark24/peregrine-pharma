@@ -36,7 +36,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="text-black mt-36 py-20">
+    <div className="text-black lg:mt-36 md:mt-36 -py-4">
       {/* About Us Section */}
       <div
         className="max-w-6xl mx-auto flex flex-col md:flex-row items-center text-center"
@@ -304,7 +304,6 @@ const AboutUs = () => {
             Respect to each others, Working on strength, Continues improvements.
           </p>
           <p className="text-lg italic text-customBlue font-red-hat font-semibold">
-          
             Empowering lives with affordable, high-quality healthcare – our
             commitment to your well-being.
           </p>
