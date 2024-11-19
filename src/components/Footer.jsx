@@ -15,7 +15,7 @@ const Footer = () => {
               <img
                 src="/assets/logo.png"
                 alt="Pharma Logo"
-                className="lg:w-120 h-12 md:w-120 md:h-28"
+                className="lg:w-120 h-32 md:w-120 md:h-28"
               />
             </Link>
           </div>
@@ -80,6 +80,20 @@ const Footer = () => {
             </a>
           </p>
         </div>
+      </div>
+
+      {/* Images Section */}
+      <div className="flex flex-wrap justify-center mt-6 gap-6">
+        <img
+          className="w-96 h-48 md:w-[28rem] md:h-[14rem] lg:w-[34rem] lg:h-[17rem] object-contain"
+          src="/assets/compassion.png"
+          alt="Compassion"
+        />
+        <img
+          className="w-96 h-48 md:w-[28rem] md:h-[14rem] lg:w-[34rem] lg:h-[17rem] object-contain"
+          src="/assets/thank.png"
+          alt="Thank You"
+        />
       </div>
 
       {/* Footer Bottom */}

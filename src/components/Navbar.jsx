@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
 
         {/* Main Navbar */}
-        <nav className="bg-gradient-to-r from-white via-white to-customBlue p-4 shadow-md">
+        <nav className="bg-white p-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <img
                   src="/assets/logo.png"
                   alt="Pharma Logo"
-                  className="lg:w-120 h-12 md:w-120 md:h-28"
+                  className="lg:w-120 h-32 md:w-120 md:h-28 "
                 />
               </Link>
             </div>
@@ -89,7 +89,9 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="md:hidden text-gray-700 focus:outline-none"
+              className="md:hidden text-customBlue bg-gray-500 rounded-md
+              p-2 inline-flex items-center justify-center hover:bg-gray-300 
+              focus:outline-none"
               aria-controls="navbar-default"
               aria-expanded={isOpen}
             >
@@ -100,13 +102,13 @@ const Navbar = () => {
               )}
             </button>
 
-            <ul className="hidden md:flex items-center font-red-hat space-x-6 
-            text-base font-semibold">
+            <ul className="hidden md:flex items-center font-red-hat space-x-4 
+            text-lg font-extrabold ">
               <li>
                 <Link
                   to="/"
                   className={`hover:text-customRed ${
-                    isActive("/") ? "text-customRed font-bold" : "text-gray-800"
+                    isActive("/") ? "text-customRed font-bold" : "text-customBlue"
                   }`}
                 >
                   Home
@@ -118,7 +120,7 @@ const Navbar = () => {
                   className={`hover:text-customRed ${
                     isActive("/about-us")
                       ? "text-customRed font-bold"
-                      : "text-gray-800"
+                      : "text-customBlue"
                   }`}
                 >
                   About Us
@@ -130,7 +132,7 @@ const Navbar = () => {
                   className={`hover:text-customRed ${
                     isActive("/products")
                       ? "text-customRed font-bold"
-                      : "text-gray-800"
+                      : "text-customBlue"
                   }`}
                 >
                   Products
@@ -142,7 +144,7 @@ const Navbar = () => {
                   className={`hover:text-customRed ${
                     isActive("/contact-us")
                       ? "text-customRed font-bold"
-                      : "text-gray-800"
+                      : "text-customBlue"
                   }`}
                 >
                   Contact

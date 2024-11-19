@@ -22,7 +22,7 @@
 @media (max-width: 1024px) {
   .hero-section {
     margin-top: -8px;
-    height: 50vh; /* Medium screens */
+    height: 40vh; /* Medium screens */
   }
 }
 @media (max-width: 960px) {
@@ -35,7 +35,7 @@
 @media (max-width: 640px) {
   .hero-section {
     height: 25vh; /* Small screens */
-    margin-top: 4px; /* Removes top margin on mobile */
+    margin-top: 87px;
     padding-top: 50px;
   }
 }

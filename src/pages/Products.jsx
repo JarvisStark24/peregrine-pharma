@@ -22,7 +22,7 @@ const Products = () => {
       {/* Product List Section */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap -m-4 -mb-32">
             {productData.map((product) => (
               <div key={product.id} className="lg:w-1/4 md:w-1/2 p-4 w-full">
                 <Link className="block relative h-48 rounded overflow-hidden">

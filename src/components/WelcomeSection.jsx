@@ -16,12 +16,56 @@ const WelcomeSection = () => {
 
   return (
     <section className="text-gray-600 body-font" data-aos="fade-up">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-5 lg:mt-36 md:mt-24 sm:mt-0 mb-10 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="sm:text-3xl text-2xl font-red-hat font-bold title-font text-gray-900 mb-4">
-            Welcome to Our Site!
+        <div
+        className="max-w-6xl mx-auto flex flex-col md:flex-row items-center text-center"
+        data-aos="fade-up"
+      >
+        <img
+          src="/assets/client.jpg"
+          alt="Pharmaceutical products"
+          className="w-full md:w-1/2 lg:w-2/5 object-cover object-center 
+          sm:ml-10 mt-48 mb-6 md:mb-0"
+        />
+        <div className="md:w-1/2 lg:w-3/5 lg:mt-6 md:mt-14 md:pl-10 ml-6 mr-6">
+          <p className="mt-4 text-base mb-4">
+            
+          <h1 className="text-5xl font-bold mb-6 text-customBlue font-red-hat">
+            About Us
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
+            <span className="text-customRed text-lg">
+              Peregrine Falcon Pharmaceuticals Private Limited
+            </span>{" "}
+            is an Active leading and prominent Pharmaceuticals marketing company
+            in West Bengal. The pharmaceutical product ranges manufactured by
+            our company are highly appreciated by many pharma experts and
+            professionals for their quality and effectiveness.The company works
+            ethically to provide a high-quality range of drugs in the market at
+            most commercial rates. By understanding the market requirement, we
+            have been able to make our name in the market by offering
+            Nutraceuticals, Anti-Biotics, Anti-Allergic, NSAID’s, etc marketing
+            service in every part of West Bengal. Our Nutraceutical Products are
+            made with only premium quality ingredients under the strict
+            inspection of team controllers.
+          </p>
+          <p className="mt-4 text-base mb-4">
+            Our top most priority is to provide best services and reliability.
+            We meet all the needs and demands of our customers by developing an
+            excellent range of products.
+          </p>
+          <p className="mt-4 text-base mb-4">
+            <span className="text-customRed">Head Office:</span> 12 M C Garden
+            Road, Camellia Metro Garden, LP 31/3/3 Kolkata, West Bengal. PIN:
+            700030 Company is established on 18 Aug 2020. According to MCA
+            records, 3 Directors are linked to this company till date.
+          </p>
+          <p className="text-lg italic text-customBlue font-red-hat font-semibold">
+            Your health is our priority!
+          </p>
+        </div>
+      </div>
+          <p className="text-base mt-4 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
             We are a biopharmaceutical company focused on the discovery,
             development and commercialization of innovative therapies intended
             to improve outcomes in patients suffering.
@@ -54,7 +98,7 @@ const WelcomeSection = () => {
                 Our dedicated expert team drives excellence, ensuring client
                 satisfaction.
               </p>
-              <Link to="/about-us">
+              <Link to="/">
                 <button
                   className="mt-3 text-customRed border-red-300 bg-white border-2 
                 py-2 px-6 rounded-md hover:bg-customRed hover:text-white"
@@ -88,7 +132,7 @@ const WelcomeSection = () => {
                 quality and proven effectiveness, earning high praise from
                 industry experts.
               </p>
-              <Link to="/products">
+              <Link to="/">
                 <button
                   className="mt-3 text-white border-red-300 bg-customRed border-2 py-2 
                 px-6 rounded-md hover:bg-white hover:text-customRed"
@@ -121,7 +165,7 @@ const WelcomeSection = () => {
                 Our motto is to lead as a top medicine manufacturer and
                 exporter, valued for our supreme quality products.
               </p>
-              <Link to="/about-us">
+              <Link to="/">
                 <button
                   className="mt-3 text-customRed bg-white border-2
                  border-red-300 py-2 

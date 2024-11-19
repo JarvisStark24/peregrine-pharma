@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
-import Partners from "./components/Partners";
 import SmoothScroll from "./utils/SmoothScroll";
 import BackToTop from "./utils/BackToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -24,7 +23,6 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>
-        <Partners />
         <Footer />
         <BackToTop />
         <WhatsAppButton />

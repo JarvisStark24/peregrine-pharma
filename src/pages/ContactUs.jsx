@@ -4,24 +4,25 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 
 const ContactUs = () => {
   return (
-    <div className="text-black lg:mt-36 md:mt-36 sm:mt-2 py-20">
+    <div className="text-black lg:mt-36 md:mt-36  py-40">
       <div
         className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16"
       >
         {/* Image Section */}
-        <div className="w-full md:w-2/5 lg:w-1/2 xl:w-1/2 mb-8 md:mb-0">
+        <div className="w-full md:w-2/5 lg:w-1/2 xl:w-1/2 -mb-20 md:mb-0">
           <img
             src="/assets/contact.png"
             alt="Pharmaceutical products"
-            className="w-full object-cover object-center"
+            className="w-full  object-cover object-center"
           />
         </div>
 
         {/* Contact Info and Form */}
-        <div className="w-full md:w-3/5 lg:w-1/2  space-y-6">
+        <div className="w-full md:w-3/5 lg:w-1/2 space-y-6 -mb-32">
           {/* Contact Information */}
           <div className="text-left">
-            <h2 className="text-3xl font-bold text-customBlue font-red-hat mb-2 text-center md:text-left">
+            <h2 className="text-3xl font-bold text-customBlue font-red-hat 
+            mb-2 text-center md:text-left">
               Get in Touch
             </h2>
             <p className="text-gray-700 mb-4 text-center md:text-left">
