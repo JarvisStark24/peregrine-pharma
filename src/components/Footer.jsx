@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="flex flex-wrap justify-center mt-6 gap-6">
         <img
           className="w-96 h-48 md:w-[28rem] md:h-[14rem] lg:w-[34rem] lg:h-[17rem] object-contain"
-          src="/assets/compassion.png"
+          src="/assets/compassion.jpg"
           alt="Compassion"
         />
         <img
