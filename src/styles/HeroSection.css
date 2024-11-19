@@ -34,9 +34,9 @@
 
 @media (max-width: 640px) {
   .hero-section {
-    height: 20vh; /* Small screens */
-    margin-top: 0; /* Removes top margin on mobile */
-    padding-top: 30px;
+    height: 25vh; /* Small screens */
+    margin-top: 4px; /* Removes top margin on mobile */
+    padding-top: 50px;
   }
 }
 
