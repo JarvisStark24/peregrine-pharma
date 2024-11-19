@@ -4,7 +4,7 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 
 const ContactUs = () => {
   return (
-    <div className="text-black lg:mt-36 sm:mt-2 py-20">
+    <div className="text-black lg:mt-36 md:mt-36 sm:mt-2 py-20">
       <div
         className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16"
       >
