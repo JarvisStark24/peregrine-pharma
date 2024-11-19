@@ -43,7 +43,8 @@ const Navbar = () => {
         }`}
       >
         {/* Top Bar */}
-        <div className="bg-customRed font-red-hat text-white text-sm p-2 flex justify-between items-center">
+        <div className="bg-customRed font-red-hat text-white text-sm p-2 
+        flex justify-between items-center">
           <div className="flex items-center space-x-4 pl-4 md:pl-24">
             <FaClock />
             <span>Opening Hours: Mon - Sat 8.00 - 18.00</span>
@@ -72,7 +73,7 @@ const Navbar = () => {
         </div>
 
         {/* Main Navbar */}
-        <nav className="bg-gradient-to-r from-white to-customBlue p-4">
+        <nav className="bg-gradient-to-r from-white via-white to-customBlue p-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
@@ -80,17 +81,9 @@ const Navbar = () => {
                 <img
                   src="/assets/logo.png"
                   alt="Pharma Logo"
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full"
+                  className="lg:w-120 h-12 md:w-120 md:h-28"
                 />
               </Link>
-              <div>
-                <Link to="/">
-                  <h1 className="text-lg font-red-hat md:text-2xl font-extrabold">
-                    Peregrine Falcon
-                  </h1>
-                </Link>
-                <p className="text-sm font-red-hat font-medium text-gray-500">Pharmaceuticals PVT LTD</p>
-              </div>
             </div>
 
             <button
@@ -107,7 +100,8 @@ const Navbar = () => {
               )}
             </button>
 
-            <ul className="hidden md:flex items-center font-red-hat space-x-6 text-base font-semibold">
+            <ul className="hidden md:flex items-center font-red-hat space-x-6 
+            text-base font-semibold">
               <li>
                 <Link
                   to="/"

@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { FcIdea } from "react-icons/fc";
 import { RiTeamFill } from "react-icons/ri";
 
+
+
 const WelcomeSection = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" data-aos="fade-up">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1 className="sm:text-3xl text-2xl font-red-hat font-bold title-font text-gray-900 mb-4">
@@ -20,28 +30,35 @@ const WelcomeSection = () => {
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
         </div>
-        
+
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {/* Team Section */}
-          <div className="p-4 md:w-1/3 flex flex-col text-center items-center 
-          group transform transition-all duration-300 hover:scale-105">
-            <div className="w-20 h-20 inline-flex items-center justify-center 
-            rounded-full text-customBlue mb-5 flex-shrink-0">
-              <RiTeamFill className="text-6xl group-hover:animate-blink 
-              transition-opacity duration-200" />
+          <div
+            className="p-4 md:w-1/3 flex flex-col text-center items-center 
+          group transform transition-all duration-300 hover:scale-105"
+          >
+            <div
+              className="w-20 h-20 inline-flex items-center justify-center 
+            rounded-full text-customBlue mb-5 flex-shrink-0"
+            >
+              <RiTeamFill
+                className="text-6xl group-hover:animate-blink 
+              transition-opacity duration-200"
+              />
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 font-red-hat text-lg title-font font-bold mb-3">
                 Peregrine Team
               </h2>
               <p className="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+                Our dedicated expert team drives excellence, ensuring client
+                satisfaction.
               </p>
               <Link to="/about-us">
-                <button className="mt-3 text-customRed border-red-300 bg-white border-2 
-                py-2 px-6 rounded-md hover:bg-customRed hover:text-white">
+                <button
+                  className="mt-3 text-customRed border-red-300 bg-white border-2 
+                py-2 px-6 rounded-md hover:bg-customRed hover:text-white"
+                >
                   Our Team
                 </button>
               </Link>
@@ -49,25 +66,33 @@ const WelcomeSection = () => {
           </div>
 
           {/* Products Section */}
-          <div className="p-4 md:w-1/3 flex flex-col text-center items-center 
-          group transform transition-all duration-300 hover:scale-105">
-            <div className="w-20 h-20 inline-flex items-center justify-center 
-            rounded-full text-customBlue mb-5 flex-shrink-0">
-              <FaHandHoldingMedical className="text-6xl group-hover:animate-blink 
-              transition-opacity duration-200" />
+          <div
+            className="p-4 md:w-1/3 flex flex-col text-center items-center 
+          group transform transition-all duration-300 hover:scale-105"
+          >
+            <div
+              className="w-20 h-20 inline-flex items-center justify-center 
+            rounded-full text-customBlue mb-5 flex-shrink-0"
+            >
+              <FaHandHoldingMedical
+                className="text-6xl group-hover:animate-blink 
+              transition-opacity duration-200"
+              />
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 font-red-hat text-lg title-font font-bold mb-3">
                 Products
               </h2>
               <p className="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+                Our pharmaceutical products are renowned for their superior
+                quality and proven effectiveness, earning high praise from
+                industry experts.
               </p>
               <Link to="/products">
-                <button className="mt-3 text-white border-red-300 bg-customRed border-2 py-2 
-                px-6 rounded-md hover:bg-white hover:text-customRed">
+                <button
+                  className="mt-3 text-white border-red-300 bg-customRed border-2 py-2 
+                px-6 rounded-md hover:bg-white hover:text-customRed"
+                >
                   Discover Now
                 </button>
               </Link>
@@ -75,26 +100,33 @@ const WelcomeSection = () => {
           </div>
 
           {/* Vision Section */}
-          <div className="p-4 md:w-1/3 flex flex-col text-center items-center 
-          group transform transition-all duration-300 hover:scale-105">
-            <div className="w-20 h-20 inline-flex items-center justify-center 
-            rounded-full text-customBlue mb-5 flex-shrink-0">
-              <FcIdea className="text-6xl group-hover:animate-blink 
-              transition-opacity duration-200" />
+          <div
+            className="p-4 md:w-1/3 flex flex-col text-center items-center 
+          group transform transition-all duration-300 hover:scale-105"
+          >
+            <div
+              className="w-20 h-20 inline-flex items-center justify-center 
+            rounded-full text-customBlue mb-5 flex-shrink-0"
+            >
+              <FcIdea
+                className="text-6xl group-hover:animate-blink 
+              transition-opacity duration-200"
+              />
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 font-red-hat text-lg title-font font-bold mb-3">
                 Our Vision
               </h2>
               <p className="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+                Our motto is to lead as a top medicine manufacturer and
+                exporter, valued for our supreme quality products.
               </p>
               <Link to="/about-us">
-                <button className="mt-3 text-customRed bg-white border-2
+                <button
+                  className="mt-3 text-customRed bg-white border-2
                  border-red-300 py-2 
-                px-6 rounded-md hover:bg-customRed hover:text-white">
+                px-6 rounded-md hover:bg-customRed hover:text-white"
+                >
                   Check It
                 </button>
               </Link>

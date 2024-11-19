@@ -8,8 +8,11 @@ module.exports = {
         customRed: 'rgb(236, 92, 66)',
         customBlue: '#19BCDB'
       },
+      width:{
+        '120': '28.5rem'
+      },
       animation: {
-        blink: 'blink 1s',
+        blink: 'blink 1s infinite',
       },
       keyframes: {
         blink: {

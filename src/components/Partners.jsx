@@ -10,7 +10,7 @@ const Partners = () => {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center font-red-hat text-3xl font-extrabold text-gray-800 mb-4">
-          Our Partners
+          Our Partners & Certifications
         </h2>
         <Carousel
           autoPlay
@@ -22,7 +22,7 @@ const Partners = () => {
           interval={2000}
           className="relative"
         >
-          <div className="flex justify-center items-center space-x-4 p-4">
+          <div className="flex justify-center items-center space-x-20 p-4">
             <div className="flex justify-center items-center">
               <img
                 src="/assets/lifevision.png"
@@ -45,7 +45,7 @@ const Partners = () => {
               />
             </div>
           </div>
-          <div className="flex justify-center items-center space-x-4 p-4">
+          <div className="flex justify-center items-center space-x-20 p-4">
             <div className="flex justify-center items-center">
               <img
                 src="/assets/united.png"
@@ -64,6 +64,59 @@ const Partners = () => {
               <img
                 src="/assets/lifecare.png"
                 alt="Lifecare"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+          </div>
+          <div className="flex justify-center items-center space-x-20 p-4">
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/gclp.png"
+                alt="GCLP"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/hacp.jpg"
+                alt="HACP"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/iso.jpg"
+                alt="ISO"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+          </div>
+          <div className="flex justify-center items-center space-x-20 p-4">
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/jas.png"
+                alt="JAS"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/nabl.jpg"
+                alt="NABL"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/pharmexcil.jpg"
+                alt="Pharmexcil"
+                className="h-16 md:h-20 opacity-90"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <img
+                src="/assets/whogmp.jpg"
+                alt="Who GMP"
                 className="h-16 md:h-20 opacity-90"
               />
             </div>

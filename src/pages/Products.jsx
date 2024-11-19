@@ -3,7 +3,7 @@ import productData from "../data/ProductData";
 
 const Products = () => {
   return (
-    <div className="text-center py-20 mt-20">
+    <div className="text-center py-20 mt-40">
       <h1 className="text-4xl font-red-hat font-bold">Our Products</h1>
       <p className="mt-4 font-red-hat text-xl">Explore our range of products.</p>
 
