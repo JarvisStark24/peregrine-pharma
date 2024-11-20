@@ -1,0 +1,61 @@
+/* General Body and Layout Styling */
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Ensure the container takes full screen height */
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Make sure the main content takes all available space and doesn't overflow */
+  main {
+    padding: 0 10px; /* Prevent horizontal overflow */
+  }
+  
+  /* Flex layout to make footer and navbar stick to the top and bottom */
+  .flex-grow {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Adjustments for very small screens (mobile) */
+  @media (max-width: 425px) {
+    .flex {
+      flex-direction: column;
+      padding: 0 5px;
+    }
+  
+    /* Adjust navbar or footer if needed */
+    .navbar, .footer {
+      padding: 10px;
+    }
+  }
+  
+  /* For Tablets */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .footer {
+      padding: 20px;
+    }
+  
+    /* Main content adjustments for better visibility */
+    main {
+      padding: 20px;
+    }
+  }
+  
+  /* Large desktop and tablet size */
+  @media (min-width: 1024px) {
+    .main-content {
+      padding: 40px;
+    }
+  }
+  

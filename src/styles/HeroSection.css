@@ -9,6 +9,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-color: rgba(99, 99, 160, 0.247);
   color: white;
   z-index: -20;
   margin-top: 66px;
@@ -34,7 +35,7 @@
 
 @media (max-width: 640px) {
   .hero-section {
-    height: 25vh; /* Small screens */
+    height: 45vh; /* Small screens */
     margin-top: 87px;
     padding-top: 50px;
   }
@@ -42,13 +43,33 @@
 
 /* Carousel styling */
 .carousel-wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-image {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
+  object-fit: cover; /* Ensures image fills the container */
+  object-position: center; /* Center the cropped area */
+  width: 100%; /* Ensures image resizes with the container */
   height: 100%;
+  max-height: 100%;
+  aspect-ratio: 9/3; /* Maintain aspect ratio (adjust as needed) */
+  transition: all 0.3s ease; /* Smooth resizing */
+}
+
+/* Additional custom rules for smaller screens */
+@media (max-width: 960px) {
+  .carousel-image {
+    aspect-ratio: 4/3; /* Adjust aspect ratio for smaller screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel-image {
+    aspect-ratio: 4/3; /* Adjust aspect ratio for very small screens */
+  }
 }

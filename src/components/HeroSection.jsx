@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="hero-section">
       <Carousel
         autoPlay
-        interval={5000}
+        interval={2000}
         infiniteLoop
         showArrows={false}
         showStatus={false}
