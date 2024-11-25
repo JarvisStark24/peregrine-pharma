@@ -151,34 +151,36 @@ const Home = () => {
 
       {/* Why Choose Us Section */}
       <div className="py-16 bg-gray-50" data-aos="fade-up">
-        <h1 className="text-4xl font-bold text-center mb-8 text-customBlue">
-          Why Choose Us
-        </h1>
+  <h1 className="text-5xl font-bold text-center mb-12 text-customBlue transition-transform duration-300 hover:scale-105">
+    Why Choose Us
+  </h1>
+  <div
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 
+    max-w-6xl mx-auto px-6"
+  >
+    {features.map((feature, index) => (
+      <div
+        key={index}
+        className="relative bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105"
+        data-aos="zoom-in"
+      >
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 
-        max-w-5xl mx-auto px-6"
-        >
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="relative bg-white border border-gray-200 shadow-md 
-              rounded-lg overflow-hidden group"
-              data-aos="zoom-in"
-            >
-              <div
-                className="absolute inset-0 bg-red-500 transition-transform 
-              duration-300 transform translate-x-full group-hover:translate-x-16"
-              ></div>
-              <div className="relative z-10 flex flex-col items-center p-6 space-y-4">
-                {feature.icon}
-                <p className="text-lg font-semibold text-gray-700">
-                  {feature.text}
-                </p>
-              </div>
-            </div>
-          ))}
+          className="absolute inset-0 bg-customBlue transition-transform 
+          duration-500 transform translate-x-full group-hover:translate-x-0"
+        ></div>
+        <div className="relative z-10 flex flex-col items-center p-8 space-y-6">
+          <div className="p-6 bg-customRed text-white rounded-full shadow-xl">
+            {feature.icon}
+          </div>
+          <p className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">
+            {feature.text}
+          </p>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Sectors Catered To */}
       <div className="mt-10" data-aos="fade-up">

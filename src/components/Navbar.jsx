@@ -38,13 +38,12 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-20 ${
-          scrolling ? "bg-opacity-90" : ""
+        className={`fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
+          scrolling ? "bg-opacity-90 bg-customRed" : "bg-transparent"
         }`}
       >
         {/* Top Bar */}
-        <div className="bg-customRed font-red-hat text-white text-sm p-2 
-        flex justify-between items-center">
+        <div className="bg-customRed font-red-hat text-white text-sm p-2 flex justify-between items-center">
           <div className="flex items-center space-x-4 pl-4 md:pl-24">
             <FaClock />
             <span>Opening Hours: Mon - Sat 8.00 - 18.00</span>
@@ -56,7 +55,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-white hover:text-customBlue transition duration-300 mr-2"
+              className="text-white hover:text-customBlue transition duration-300 transform hover:scale-110"
             >
               <FaFacebookF />
             </a>
@@ -65,7 +64,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-white hover:text-customBlue transition duration-300"
+              className="text-white hover:text-customBlue transition duration-300 transform hover:scale-110"
             >
               <FaInstagram />
             </a>
@@ -73,7 +72,7 @@ const Navbar = () => {
         </div>
 
         {/* Main Navbar */}
-        <nav className="bg-white p-4 shadow-md">
+        <nav className="bg-white p-4 shadow-lg transition-all duration-300 ease-in-out">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
@@ -81,7 +80,7 @@ const Navbar = () => {
                 <img
                   src="/assets/logo.png"
                   alt="Pharma Logo"
-                  className="lg:w-120 h-32 md:w-120 md:h-28 "
+                  className="lg:w-120 h-32 md:w-120 md:h-28 object-contain"
                 />
               </Link>
             </div>
@@ -89,9 +88,7 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="md:hidden text-customBlue bg-gray-500 rounded-md
-              p-2 inline-flex items-center justify-center hover:bg-gray-300 
-              focus:outline-none"
+              className="md:hidden text-customBlue bg-gray-500 rounded-md p-2 inline-flex items-center justify-center hover:bg-gray-300 focus:outline-none"
               aria-controls="navbar-default"
               aria-expanded={isOpen}
             >
@@ -102,8 +99,8 @@ const Navbar = () => {
               )}
             </button>
 
-            <ul className="hidden md:flex items-center font-red-hat space-x-4 
-            text-lg font-extrabold ">
+            {/* Desktop Navbar */}
+            <ul className="hidden md:flex items-center font-red-hat space-x-6 text-lg font-semibold tracking-wide">
               <li>
                 <Link
                   to="/"
@@ -155,11 +152,8 @@ const Navbar = () => {
 
           {/* Dropdown Menu for Mobile */}
           {isOpen && (
-            <div
-              className="md:hidden absolute right-2 mt-0 bg-customRed font-red-hat
-             text-white shadow-lg rounded-lg p-4"
-            >
-              <ul className="space-y-2 text-base font-semibold">
+            <div className="md:hidden absolute right-2 mt-0 bg-customRed font-red-hat text-white shadow-xl rounded-lg p-4 transition-all duration-500 ease-in-out transform">
+              <ul className="space-y-4 text-base font-semibold">
                 <li className="flex items-center space-x-2">
                   <IoIosHome className="text-customBlue" />
                   <Link

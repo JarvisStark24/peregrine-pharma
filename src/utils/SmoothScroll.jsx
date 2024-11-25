@@ -12,21 +12,39 @@ const SmoothScroll = () => {
       smooth: "easeInOutQuart",
     });
 
-    // Handle internal links with smooth scrolling
+    // Handle internal anchor links with smooth scrolling
     const handleAnchorLinks = (e) => {
       const target = e.target;
       const href = target.getAttribute("href");
-      if (target.tagName === "A" && href.startsWith("#")) {
+
+      // Check if it's an anchor link (href starts with "#")
+      if (target.tagName === "A" && href && href.startsWith("#")) {
         e.preventDefault();
-        scroller.scrollTo(href.substring(1), {
+        const targetId = href.substring(1);
+
+        scroller.scrollTo(targetId, {
           duration: 800,
           smooth: "easeInOutQuart",
         });
       }
     };
 
-    document.addEventListener("click", handleAnchorLinks);
-    return () => document.removeEventListener("click", handleAnchorLinks);
+    // Attach event listener for anchor links
+    document.body.addEventListener("click", handleAnchorLinks);
+
+    // Scroll to section if the URL contains a hash (#section) when the component is mounted
+    if (location.hash) {
+      const sectionId = location.hash.substring(1);
+      scroller.scrollTo(sectionId, {
+        duration: 800,
+        smooth: "easeInOutQuart",
+      });
+    }
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.body.removeEventListener("click", handleAnchorLinks);
+    };
   }, [location]);
 
   return null;

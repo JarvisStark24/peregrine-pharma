@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       colors: {
         customRed: 'rgb(236, 92, 66)',
-        customBlue: '#19BCDB'
+        customBlue: '#19BCDB',
+        customOrange: '#FF7F32',
       },
       width:{
         '120': '28.5rem'
