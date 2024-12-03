@@ -63,7 +63,7 @@ const BackToTop = () => {
             ${isVisible ? "animate-pulse" : ""}`}
           style={{
             boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
-            animation: isVisible ? "pulse-beacon 1.5s infinite" : "none", // Applying pulse animation inline
+            animation: isVisible ? "pulse-beacon 1.5s infinite" : "none",
           }}
         >
           <FaArrowUp className="text-xl" />

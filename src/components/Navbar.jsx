@@ -60,7 +60,7 @@ const Navbar = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://www.instagram.com/" // Update Instagram link
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

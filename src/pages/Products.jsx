@@ -48,8 +48,8 @@ const Products = () => {
               <div
                 key={product.id}
                 className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                data-aos="fade-up" // Animation type
-                data-aos-delay={index * 100} // Delay increases for each product
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="relative transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg bg-white rounded-lg overflow-hidden">
                   <Link className="block relative h-48">

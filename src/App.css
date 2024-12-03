@@ -4,19 +4,19 @@ body {
     font-family: sans-serif;
   }
   
-  /* Ensure the container takes full screen height */
+  /* Container takes full screen height */
   html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
   }
   
-  /* Make sure the main content takes all available space and doesn't overflow */
+  /* Main content takes all available space and doesn't overflow */
   main {
     padding: 0 10px; /* Prevent horizontal overflow */
   }
   
-  /* Flex layout to make footer and navbar stick to the top and bottom */
+  /* Sticky Navbar */
   .flex-grow {
     display: flex;
     flex-direction: column;
@@ -29,8 +29,6 @@ body {
       flex-direction: column;
       padding: 0 5px;
     }
-  
-    /* Adjust navbar or footer if needed */
     .navbar, .footer {
       padding: 10px;
     }
@@ -46,7 +44,6 @@ body {
       padding: 20px;
     }
   
-    /* Main content adjustments for better visibility */
     main {
       padding: 20px;
     }
