@@ -1,6 +1,6 @@
 # Peregrine Falcon Pvt Ltd Live
 
-Welcome to the Peregrine Falcon Pvt Ltd Live project! This is a professional marketing website designed to showcase the company's products and brochures effectively. Built using React.js and styled with Tailwind CSS, the platform is optimized for performance and user engagement.
+Welcome to the Peregrine Falcon Pharmaceutical Pvt Ltd Live project! This is a professional marketing website designed to showcase the company's products and brochures effectively. Built using React.js and styled with Tailwind CSS, the platform is optimized for performance and user engagement.
 
 ## Features
 
@@ -91,5 +91,5 @@ Created by **codewithjarvis**.
 
 ---
 
-Thank you for using Peregrine Falcon Pvt Ltd Live! If you have any questions or feedback, feel free to reach out.
+Thank you for using Peregrine Falcon Pharmaceutical Pvt Ltd Live! If you have any questions or feedback, feel free to reach out.
 
