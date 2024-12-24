@@ -9,7 +9,7 @@ const Ppcp = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 py-20">
+    <div className="bg-gradient-to-r from-violet-700 via-gray-800 to-violet-900 py-20">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
         {features.map((feature, index) => (
           <div
@@ -18,7 +18,7 @@ const Ppcp = () => {
           >
             <div
               className="p-6 border-4 border-transparent rounded-full bg-white 
-              text-customOrange shadow-lg hover:shadow-xl transition-all duration-300"
+              text-violet-600 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {feature.icon}
             </div>

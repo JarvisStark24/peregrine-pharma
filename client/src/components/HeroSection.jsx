@@ -31,7 +31,7 @@ const HeroSection = () => {
               alt={`Slide ${index + 1}`}
               className="carousel-image object-cover w-full h-full"
             />
-            <div className="carousel-overlay absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent opacity-50"></div>
+            <div className="carousel-overlay absolute top-0 left-0 w-full h-full opacity-50"></div>
 
             {/* Text overlay */}
             <div className="absolute bottom-20 left-10 text-white z-10">

@@ -1,12 +1,12 @@
 export const slides = [
     {
-      image: "/assets/slide1.jpg",
+      image: "/assets/slide0.jpg",
     },
     {
-      image: "/assets/slide2.jpg",
+      image: "/assets/slide01.jpg",
     },
     {
-      image: "/assets/slide3.jpg",
+      image: "/assets/slide02.jpg",
     },
   ];
   

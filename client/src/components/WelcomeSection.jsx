@@ -88,7 +88,7 @@ const WelcomeSection = () => {
               <p className="leading-relaxed text-base text-gray-600">
                 Our pharmaceutical products are renowned for their superior quality and proven effectiveness, earning high praise from industry experts.
               </p>
-              <Link to="/">
+              <Link to="/products">
                 <button className="mt-3 text-white border-red-300 bg-customRed border-2 py-2 px-6 rounded-md hover:bg-white hover:text-customRed transition duration-300">
                   Discover Now
                 </button>

@@ -43,7 +43,7 @@ const Navbar = () => {
         }`}
       >
         {/* Top Bar */}
-        <div className="bg-customRed font-red-hat text-white text-sm p-2 flex justify-between items-center">
+        <div className="bg-violet-600 font-red-hat text-white text-sm p-2 flex justify-between items-center">
           <div className="flex items-center space-x-4 pl-4 md:pl-24">
             <FaClock />
             <span>Opening Hours: Mon - Sat 8.00 - 18.00</span>
@@ -105,7 +105,7 @@ const Navbar = () => {
                 <Link
                   to="/"
                   className={`hover:text-customRed ${
-                    isActive("/") ? "text-customRed font-bold" : "text-customBlue"
+                    isActive("/") ? "text-customRed font-bold" : "text-violet-600"
                   }`}
                 >
                   Home
@@ -117,7 +117,7 @@ const Navbar = () => {
                   className={`hover:text-customRed ${
                     isActive("/about-us")
                       ? "text-customRed font-bold"
-                      : "text-customBlue"
+                      : "text-violet-600"
                   }`}
                 >
                   About Us
@@ -129,7 +129,7 @@ const Navbar = () => {
                   className={`hover:text-customRed ${
                     isActive("/products")
                       ? "text-customRed font-bold"
-                      : "text-customBlue"
+                      : "text-violet-600"
                   }`}
                 >
                   Products
@@ -141,7 +141,7 @@ const Navbar = () => {
                   className={`hover:text-customRed ${
                     isActive("/contact-us")
                       ? "text-customRed font-bold"
-                      : "text-customBlue"
+                      : "text-violet-600"
                   }`}
                 >
                   Contact

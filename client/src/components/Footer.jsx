@@ -27,16 +27,16 @@ const Footer = () => {
         />
       </Link>
     </div>
-    <p className="mt-2 text-sm text-gray-300 max-w-md">
+    {/* <p className="mt-2 text-sm text-gray-300 max-w-md">
       Peregrine Falcon Pharmaceuticals is a leading pharmaceutical marketing company in West Bengal, dedicated to improving healthcare.
-    </p>
+    </p> */}
     <div className="social-icons flex mt-4 space-x-3">
       <a
         href="https://www.facebook.com/PeregrineFalconPharmaceuticalsPrivateLimited"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook"
-        className="text-white hover:text-customRed transition duration-300 transform hover:scale-110"
+        className="text-violet-600  hover:text-customRed transition duration-300 transform hover:scale-110"
       >
         <FaFacebookF className="text-2xl" />
       </a>
@@ -45,7 +45,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
-        className="text-white hover:text-customRed transition duration-300 transform hover:scale-110"
+        className="text-violet-600  hover:text-customRed transition duration-300 transform hover:scale-110"
       >
         <FaInstagram className="text-2xl" />
       </a>
@@ -63,7 +63,7 @@ const Footer = () => {
           href="https://www.google.com/maps?q=12+M+C+Garden+Road,+Camellia+Metro+Garden,+LP+31/3/3,+Kolkata,+West+Bengal,+PIN:700030"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-customBlue hover:underline"
+          className="text-violet-600  hover:underline"
         >
           12 M C Garden Road, Camellia Metro Garden, LP 31/3/3, Kolkata, West Bengal. PIN: 700030
         </a>
@@ -71,36 +71,18 @@ const Footer = () => {
     </p>
     <p className="mt-2 flex items-center text-sm text-gray-300">
       <FiPhone className="mr-2 text-lg" />
-      <a href="tel:+916297761130" className="text-customBlue hover:underline">
+      <a href="tel:+916297761130" className="text-violet-600  hover:underline">
         +91-6297761130
       </a>
     </p>
     <p className="mt-2 flex items-center text-sm text-gray-300">
       <FiMail className="mr-2 text-lg" />
-      <a href="mailto:info@peregrinefalcon.in" className="text-customBlue hover:underline">
+      <a href="mailto:info@peregrinefalcon.in" className="text-violet-600  hover:underline">
         info@peregrinefalcon.in
       </a>
     </p>
   </div>
 </div>
-
-      {/* Images Section */}
-      <div className="flex flex-wrap justify-center mt-8 gap-8">
-        <div className="w-full sm:w-96 md:w-[28rem] lg:w-[34rem]">
-          <img
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
-            src="/assets/compassion.jpg"
-            alt="Compassion"
-          />
-        </div>
-        <div className="w-full sm:w-96 md:w-[28rem] lg:w-[34rem]">
-          <img
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
-            src="/assets/thank.png"
-            alt="Thank You"
-          />
-        </div>
-      </div>
 
       {/* Footer Bottom */}
       <div className="footer-bottom p-4 bg-gradient-to-r from-gray-900 to-gray-800 text-center mt-8 text-xs">
