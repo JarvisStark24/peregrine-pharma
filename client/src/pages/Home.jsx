@@ -100,7 +100,7 @@ const Home = () => {
                   <div className="p-6">
                     <h2
                       className="tracking-widest text-lg title-font font-medium
-             text-gray-900 mb-1"
+                     text-gray-900 mb-1"
                     >
                       COMPANY INFORMATION
                     </h2>
@@ -110,7 +110,7 @@ const Home = () => {
                     <table className="table-auto w-full border border-gray-300 mb-3">
                       <thead>
                         <tr>
-                          <th className="border px-4 py-2 text-left">
+                          <th className="border px-2 py-2 text-left">
                             CIN/LLPIN/FCRN:
                           </th>
                           <td className="border px-4 py-2">
