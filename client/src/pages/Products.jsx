@@ -47,25 +47,31 @@ const Products = () => {
             {productData.map((product, index) => (
               <div
                 key={product.id}
-                className="lg:w-1/4 md:w-1/2 p-4 w-full"
+                className={`lg:w-1/2 md:w-full p-4 w-full`}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <div className="relative transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg bg-white rounded-lg overflow-hidden">
-                  <Link className="block relative h-48">
-                    <img
-                      alt={product.title}
-                      className="object-cover object-center w-full h-full block"
-                      src={product.imageSrc}
-                    />
-                  </Link>
-                  <div className="p-4">
-                    <h2 className="text-customRed font-red-hat text-lg font-extrabold 
-                    tracking-widest title-font mb-1">
+                {/* Flex container for alternating layout */}
+                <div
+                  className={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} items-center`}
+                >
+                  {/* Image Section */}
+                  <div className="relative transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg bg-white rounded-lg overflow-hidden w-full lg:w-1/2">
+                    <Link className="block relative h-full">
+                      <img
+                        alt={product.title}
+                        className="object-cover object-center w-full h-full block"
+                        src={product.imageSrc}
+                      />
+                    </Link>
+                  </div>
+
+                  {/* Description Section */}
+                  <div className="p-4 w-full lg:w-1/2">
+                    <h2 className="text-customRed font-red-hat text-lg font-extrabold tracking-widest title-font mb-1">
                       {product.title}
                     </h2>
-                    <h4 className="text-customBlue title-font font-red-hat
-                    text-sm font-bold mb-2">
+                    <h4 className="text-customBlue title-font font-red-hat text-sm font-bold mb-2">
                       {product.category}
                     </h4>
                     <p className="text-gray-900 title-font font-red-hat text-sm">
